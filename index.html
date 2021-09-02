@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+</head>
+<body >
+  
+    <div id="popupmain" style="display: none;" >
+        <di id="popup">
+            <h1 id="newshead">Subscribe to our Newsletter</h1>
+            <input type="email" name="" id="emailid" placeholder="user@email.com"><br>
+            <button class="submitid">Subscribe</button>
+            <button class="submitid">Close it</button>
+        </di>
+    </div>
+    
+    <section id="home">
+<header>
+    
+        <img src="images/Untitled.png" width="100" height="75">
+    
+<ul id="me">
+<li><a href="#home">HOME</a></li>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#product">PRODUCT</a></li>
+<li><a href="#pricing">PRICING</a></li>
+<li><a href="#contact">CONTACT</a></li>
+
+</ul>
+
+</header>
+<h1 class="heads">This is Home Page</h1>
+    </section>
+    <section id="about"><h1 class="heads">This is About Page</h1></section>
+    <section id="product"><h1 class="heads">This is Product Page</h1></section>
+    <section id="pricing"><h1 class="heads">This is Pricing Page</h1></section>
+    <section id="contact"><h1 class="heads">This is Contact page</h1></section>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+      setTimeout(function(){
+        $("#popupmain").css("display","block")
+      },4000) ;
+      $(".submitid").click(function(){
+        $("#popupmain").css("display","none");
+      });
+		
+    </script>
+</body>
+</html>

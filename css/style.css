@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    }
+#loading{
+	
+	/* width: 100%;
+	height: 100vh; */
+	background:white 
+    url("https://cdn.dribbble.com/users/891352/screenshots/3675943/lego-loader.gif")  no-repeat center center ;
+   
+	 z-index: 9999; 
+}
+#popupmain{
+    position: fixed;
+    width: 100%;
+    height:100vh ;
+    background: rgba(0,0,0,0.6);
+    z-index: 1001;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#popup{
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 2px 5px 3px white;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size: cover;
+}
+#newshead{
+transform: translateY(50px);
+color: white;
+}
+#emailid{
+width: 60%;
+padding: 5px;
+margin-top: 80px;
+margin-bottom: 20px;
+}
+.submitid{
+background-color: #0fc0fa;
+border: none;
+font-size: 1rem;
+padding: 0.6rem 1rem;
+color: white;
+}
+
+header{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    height:15vh;
+    position:fixed;
+    z-index: 1;
+    background:rgba(0,0,0,0.2);
+}
+
+#me li{
+    list-style: none;
+   
+    display:inline-block;
+    
+    margin: 20px;
+}
+
+ #me li a{
+    text-decoration: none;
+    color: rgb(240, 244, 245);
+    transition: all 1s ease;
+
+}
+#me li a:hover{
+color: black;
+font-weight: bold;
+}
+
+
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    float: left;
+    
+}
+.heads{
+    color: white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    
+
+}
+  #home{
+     background-color:  rgb(173, 65, 65);
+     
+
+}
+ #about{
+background: rgb(76, 76, 182);
+
+}
+#product{
+    background-color: rgb(134, 37, 134);
+}
+
+  #pricing{
+    background: rgb(230, 148, 48);
+    }
+#contact{
+    background-color: rgb(139, 139, 11);
+}
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('images/Rainbow.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+}
+    
+@media screen and (max-width:800px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
+    }
+    
+}
